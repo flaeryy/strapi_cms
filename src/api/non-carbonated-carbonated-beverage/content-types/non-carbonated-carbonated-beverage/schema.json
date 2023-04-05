@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "non_carbonated_carbonated_beverages",
+  "info": {
+    "singularName": "non-carbonated-carbonated-beverage",
+    "pluralName": "non-carbonated-carbonated-beverages",
+    "displayName": "Non-carbonated/carbonated beverage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "non_carbonated_carbonated_beverages"
+    }
+  }
+}

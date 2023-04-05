@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hot_drinks",
+  "info": {
+    "singularName": "hot-drink",
+    "pluralName": "hot-drinks",
+    "displayName": "Hot drink"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "string"
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "hot_drinks"
+    }
+  }
+}

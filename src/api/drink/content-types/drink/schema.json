@@ -1,0 +1,111 @@
+{
+  "kind": "collectionType",
+  "collectionName": "drinks",
+  "info": {
+    "singularName": "drink",
+    "pluralName": "drinks",
+    "displayName": "Drink",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "beers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::beer.beer",
+      "mappedBy": "drink"
+    },
+    "waters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::water.water",
+      "mappedBy": "drink"
+    },
+    "hot_drinks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hot-drink.hot-drink",
+      "mappedBy": "drink"
+    },
+    "wines": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wine.wine",
+      "mappedBy": "drink"
+    },
+    "api_desc": {
+      "type": "string"
+    },
+    "alcoholic_beverages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alcoholic-beverage.alcoholic-beverage",
+      "mappedBy": "drink"
+    },
+    "bottle_services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bottle-service.bottle-service",
+      "mappedBy": "drink"
+    },
+    "carbonated_alcoholic_beverages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::carbonated-alcoholic-beverage.carbonated-alcoholic-beverage",
+      "mappedBy": "drink"
+    },
+    "natural_juices_and_freshly_squeezed_juices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::natural-juices-and-freshly-squeezed-juice.natural-juices-and-freshly-squeezed-juice",
+      "mappedBy": "drink"
+    },
+    "non_carbonated_carbonated_beverages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::non-carbonated-carbonated-beverage.non-carbonated-carbonated-beverage",
+      "mappedBy": "drink"
+    },
+    "promotions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::promotion.promotion",
+      "mappedBy": "drink"
+    },
+    "rakijes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rakije.rakije",
+      "mappedBy": "drink"
+    },
+    "sparkling_wines": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sparkling-wine.sparkling-wine",
+      "mappedBy": "drink"
+    },
+    "toast_and_croissants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::toast-and-croissant.toast-and-croissant",
+      "mappedBy": "drink"
+    }
+  }
+}

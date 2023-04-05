@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rakijes",
+  "info": {
+    "singularName": "rakije",
+    "pluralName": "rakijes",
+    "displayName": "RAKIJE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "rakijes"
+    }
+  }
+}

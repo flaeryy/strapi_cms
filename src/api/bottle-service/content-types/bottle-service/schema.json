@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottle_services",
+  "info": {
+    "singularName": "bottle-service",
+    "pluralName": "bottle-services",
+    "displayName": "BOTTLE SERVICE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "bottle_services"
+    }
+  }
+}

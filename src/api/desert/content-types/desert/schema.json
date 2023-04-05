@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deserts",
+  "info": {
+    "singularName": "desert",
+    "pluralName": "deserts",
+    "displayName": "Desert",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rice_bowls",
+  "info": {
+    "singularName": "rice-bowl",
+    "pluralName": "rice-bowls",
+    "displayName": "Rice Bowl"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}

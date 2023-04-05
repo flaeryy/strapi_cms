@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "natural_juices_and_freshly_squeezed_juices",
+  "info": {
+    "singularName": "natural-juices-and-freshly-squeezed-juice",
+    "pluralName": "natural-juices-and-freshly-squeezed-juices",
+    "displayName": "Natural juices & freshly squeezed juice"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "natural_juices_and_freshly_squeezed_juices"
+    }
+  }
+}

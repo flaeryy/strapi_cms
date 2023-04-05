@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "toast_and_croissants",
+  "info": {
+    "singularName": "toast-and-croissant",
+    "pluralName": "toast-and-croissants",
+    "displayName": "TOAST & CROISSANT",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "drink": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::drink.drink",
+      "inversedBy": "toast_and_croissants"
+    }
+  }
+}
