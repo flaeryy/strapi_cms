@@ -1,12 +1,13 @@
 module.exports = ({ env }) => ({
-  // ...
-  admin: {
-    auth: {
-      secret: env("ADMIN_JWT_SECRET", "myAdminSecret"),
-      apiToken: {
-        // Set the apiToken.salt variable
-        salt: env("ADMIN_API_TOKEN_SALT", "mySalt"),
-      },
+  auth: {
+    secret: env("ADMIN_JWT_SECRET"),
+  },
+  apiToken: {
+    salt: env("API_TOKEN_SALT"),
+  },
+  transfer: {
+    token: {
+      salt: env("TRANSFER_TOKEN_SALT"),
     },
   },
 });
