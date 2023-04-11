@@ -16,6 +16,7 @@
     "@strapi/strapi": "4.7.1",
     "better-sqlite3": "8.0.1",
     "codemirror": "^5.65.11",
+    "pg": "^8.10.0",
     "strapi-plugin-import-export-entries": "^1.18.1"
   },
   "author": {
